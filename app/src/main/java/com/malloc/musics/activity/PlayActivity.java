@@ -127,7 +127,7 @@ public class PlayActivity extends BaseActivity implements
                 }
                 break;
             case R.id.prevMusic:
-                playService.prevMusic();    //播放上一首
+                playService.prevMusic();    //播放上一首ddd
                 break;
             case R.id.nextMusic:
                 playService.nextMusic();   //播放下一首
