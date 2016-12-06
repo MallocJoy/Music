@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">为她音悦</string>
+    <string name="action_contact">Contact</string>
+    <string name="musicName">歌名</string>
+    <string name="singer">歌手</string>
+    <string name="musicTime">音乐时长</string>
+    <string name="showTime">00:00</string>
+
+</resources>

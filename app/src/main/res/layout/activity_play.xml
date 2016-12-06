@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#524F52"
+    android:orientation="vertical"
+    tools:context="com.malloc.musics.activity.PlayActivity">
+
+    <TextView
+        android:id="@+id/musicName"
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColor="#FFFF"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/musicName"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/albumImg"
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/p1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+      android:layout_margin="10dp"
+        android:layout_weight="0.5">
+
+        <TextView
+            android:id="@+id/currentTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#ffff"
+            android:gravity="center|left"
+            android:text="@string/showTime" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/totalTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#818180"
+            android:gravity="center|right"
+            android:text="@string/showTime" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="3dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/playMode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/tool_repeat_all_n" />
+
+
+        <ImageView
+            android:id="@+id/prevMusic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="9dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/nowplaying_prev_n" />
+
+        <ImageView
+            android:id="@+id/play_pauseMusic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/nowplaying_play_n" />
+
+        <ImageView
+            android:id="@+id/nextMusic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="9dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/nowplaying_next_n" />
+
+        <ImageView
+            android:id="@+id/like"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@mipmap/xin_bai" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"/>
+
+</LinearLayout>
